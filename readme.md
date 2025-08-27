@@ -54,6 +54,21 @@ Report Generation: Engagement reports are generated as downloadable PDFs.
 
 📦 Dependencies
 
+
+
+|-----------|-----------|
+|Dependency |Description|
+|-----------|-----------|
+|Flask|Web framework for the application.|
+|Flask-SocketIO|Real-time communication for live updates.|
+|OpenCV (cv2)|Video capture and processing.|
+|MediaPipe|Framework for engagement detection.|
+|python-dotenv|Environment variable management.|
+|AssemblyAI|API for speech-to-text functionality.|
+|-----------|-----------|
+
+
+
 Flask: Web framework for the application.
 Flask-SocketIO: Real-time communication for live updates.
 OpenCV (cv2): Video capture and processing.
