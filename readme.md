@@ -55,11 +55,11 @@ Engagement Tracker/
 ```
 ## 📊 Workflow
 
-Video Capture: Video frames are captured using OpenCV.
-Engagement Detection: Frames are processed by EngageTrackVideoProcessor for face, gaze, and activity detection.
-Real-time Updates: Socket.IO emits activities and events to the client dashboard.
-Session Logging: Session logs are written to disk.
-Report GeneraEngagement Tracker/tion: Engagement reports are generated as downloadable PDFs.
+Video Capture: Video frames are captured using OpenCV. <br>
+Engagement Detection: Frames are processed by EngageTrackVideoProcessor for face, gaze, and activity detection. <br>
+Real-time Updates: Socket.IO emits activities and events to the client dashboard. <br>
+Session Logging: Session logs are written to disk. <br>
+Report GeneraEngagement Tracker/tion: Engagement reports are generated as downloadable PDFs. <br>
 
 ## 📦 Dependencies
 
