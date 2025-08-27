@@ -1,5 +1,5 @@
 ## Engagement Tracker
-An AI-powered real-time engagement tracker that analyzes video feeds, speech activity, and user interactions. It leverages Flask and Socket.IO for a dynamic web interface, OpenCV for video processing, and MediaPipe (via a custom processor) for detecting activities and engagement levels. The system provides live dashboards and generates downloadable PDF engagement reports at the end of each session. <br>
+An AI-powered real-time engagement tracker that analyzes video feeds, speech activity, and user interactions. It leverages Flask and Socket.IO for a dynamic web interface, OpenCV for video processing, and MediaPipe (via a custom processor) for detecting activities and engagement levels. The system provides live dashboards and generates downloadable PDF engagement reports at the end of each session. <br> <br>
 ![Demo](https://raw.githubusercontent.com/Joshluk3328j/Engagment-tracker-v1/main/img.png)
 
 ## 🚀 Features
