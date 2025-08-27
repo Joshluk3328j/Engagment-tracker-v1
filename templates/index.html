@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Live Video Feed</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='video.css')}}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.js"></script>
+    <script>
+        var socket = io();
+        socket.on('update_activities', function (data) {
+            document.getElementById('attention').innerText = data[0];
+            document.getElementById('fatigue').innerText = data[1];
+            document.getElementById('hand').innerText = data[2];
+            document.getElementById('speech').innerText = data[3];
+        });
+        socket.on('update_log', function (data) {
+            var logArea = document.getElementById('log_area');
+            var logEntry = `[${data.timestamp}] ${data.event_type}: ${data.description}`;
+            if (data.speech_context) {
+                logEntry += ` (Context: "${data.speech_context}")`;
+            }
+            logEntry += '\n';
+            logArea.value += logEntry;
+            logArea.scrollTop = logArea.scrollHeight; // Auto-scroll to bottom
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Live Video Feed</h1>
+    <div class="container">
+        <img id="bg" src="{{ url_for('video_feed') }}">
+        <div>
+            <ul>
+                <li id="attentionList">Attention: <span id="attention">N/A</span> </li>
+                <li id="fatigueList">Fatigue: <span id="fatigue">N/A</span> </li>
+                <li id="handList">Hand: <span id="hand">N/A</span> </li>
+                <li id="speechList">Speech: <span id="speech">...</span></li>
+            </ul>
+            <h3>Live Log</h3>
+            <textarea id="log_area" readonly></textarea>
+            <button onclick="window.location.href='/end_session'">End Session</button>
+        </div>
+    </div>
+</body>
+
+</html>
