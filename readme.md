@@ -1,6 +1,6 @@
-Engagement Tracker
+# Engagement Tracker
 An AI-powered real-time engagement tracker that analyzes video feeds, speech activity, and user interactions. It leverages Flask and Socket.IO for a dynamic web interface, OpenCV for video processing, and MediaPipe (via a custom processor) for detecting activities and engagement levels. The system provides live dashboards and generates downloadable PDF engagement reports at the end of each session.
-🚀 Features
+# 🚀 Features
 
 📹 Real-time video streaming using OpenCV and Flask.
 🧠 Engagement tracking with EngageTrackVideoProcessor for face, gaze, and activity detection.
@@ -9,31 +9,38 @@ An AI-powered real-time engagement tracker that analyzes video feeds, speech act
 📑 Session reports exported as downloadable PDFs.
 🌐 Web-based dashboard for monitoring participants in real time.
 
-🛠️ Installation
+# 🛠️ Installation
 Follow these steps to set up the Engagement Tracker on your local machine.
 1. Clone the Repository
+```
 git clone https://github.com/yourusername/engagement-tracker.git
 cd engagement-tracker
-
+```
 2. Create a Virtual Environment
+```
 python3 -m venv venv
 source venv/bin/activate  # Linux / Mac
 venv\Scripts\activate     # Windows
-
+```
 3. Install Dependencies
-pip install -r requirements.txt
 
+```
+pip install -r requirements.txt
+```
 4. Set Environment Variables
 Create a .env file in the project root and add your AssemblyAI API key:
+```
 ASSEMBLY_API_KEY=your_api_key_here
+```
 
-▶️ Running the App
+# ▶️ Running the App
 Start the Flask application:
+```
 python app.py
-
+```
 The server will run by default at:👉 http://localhost:5000
-📂 Project Structure
-Engagement Tracker/
+# 📂 Project Structure
+```Engagement Tracker/
 ├── app.py                    # Main Flask app entry point
 ├── engage_track_video.py     # Engagement tracking video processor
 ├── templates/
@@ -43,8 +50,8 @@ Engagement Tracker/
 │   └── engagement_report.pdf # Session reports stored here
 ├── requirements.txt          # Python dependencies
 ├── .env                      # Environment variables (AssemblyAI key)
-
-📊 Workflow
+```
+# 📊 Workflow
 
 Video Capture: Video frames are captured using OpenCV.
 Engagement Detection: Frames are processed by EngageTrackVideoProcessor for face, gaze, and activity detection.
@@ -52,11 +59,8 @@ Real-time Updates: Socket.IO emits activities and events to the client dashboard
 Session Logging: Session logs are written to disk.
 Report Generation: Engagement reports are generated as downloadable PDFs.
 
-📦 Dependencies
+# 📦 Dependencies
 
-
-
-|-----------|-----------|
 |Dependency |Description|
 |-----------|-----------|
 |Flask|Web framework for the application.|
@@ -65,16 +69,6 @@ Report Generation: Engagement reports are generated as downloadable PDFs.
 |MediaPipe|Framework for engagement detection.|
 |python-dotenv|Environment variable management.|
 |AssemblyAI|API for speech-to-text functionality.|
-|-----------|-----------|
 
-
-
-Flask: Web framework for the application.
-Flask-SocketIO: Real-time communication for live updates.
-OpenCV (cv2): Video capture and processing.
-MediaPipe: Framework for engagement detection.
-python-dotenv: Environment variable management.
-AssemblyAI: API for speech-to-text functionality.
-
-📜 License
+# 📜 License
 This project is licensed under the MIT License. Feel free to use and modify it for your own projects.
