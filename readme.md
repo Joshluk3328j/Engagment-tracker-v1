@@ -1,14 +1,15 @@
 # Engagement Tracker
 An AI-powered real-time engagement tracker that analyzes video feeds, speech activity, and user interactions. It leverages Flask and Socket.IO for a dynamic web interface, OpenCV for video processing, and MediaPipe (via a custom processor) for detecting activities and engagement levels. The system provides live dashboards and generates downloadable PDF engagement reports at the end of each session.
+[Demo](https://github.com/Joshluk3328j/Engagment-tracker-v1/blob/blob/main/img.png)
 
 ## 🚀 Features
 
-📹 Real-time video streaming using OpenCV and Flask. <br>
-🧠 Engagement tracking with EngageTrackVideoProcessor for face, gaze, and activity detection. <br>
-🎙️ Speech-to-text integration powered by the AssemblyAI API. <br>
-🔄 Live activity updates and event logs via Socket.IO. <br>
-📑 Session reports exported as downloadable PDFs. <br>
-🌐 Web-based dashboard for monitoring participants in real time. <br>
+- 📹 Real-time video streaming using OpenCV and Flask. <br>
+- 🧠 Engagement tracking with EngageTrackVideoProcessor for face, gaze, and activity detection. <br>
+- 🎙️ Speech-to-text integration powered by the AssemblyAI API. <br>
+- 🔄 Live activity updates and event logs via Socket.IO. <br>
+- 📑 Session reports exported as downloadable PDFs. <br>
+- 🌐 Web-based dashboard for monitoring participants in real time. <br>
 
 ## 🛠️ Installation
 Follow these steps to set up the Engagement Tracker on your local machine.
@@ -55,11 +56,11 @@ Engagement Tracker/
 ```
 ## 📊 Workflow
 
-Video Capture: Video frames are captured using OpenCV. <br>
-Engagement Detection: Frames are processed by EngageTrackVideoProcessor for face, gaze, and activity detection. <br>
-Real-time Updates: Socket.IO emits activities and events to the client dashboard. <br>
-Session Logging: Session logs are written to disk. <br>
-Report GeneraEngagement Tracker/tion: Engagement reports are generated as downloadable PDFs. <br>
+- Video Capture: Video frames are captured using OpenCV. <br>
+- Engagement Detection: Frames are processed by EngageTrackVideoProcessor for face, gaze, and activity detection. <br>
+- Real-time Updates: Socket.IO emits activities and events to the client dashboard. <br>
+- Session Logging: Session logs are written to disk. <br>
+- Report GeneraEngagement Tracker/tion: Engagement reports are generated as downloadable PDFs. <br>
 
 ## 📦 Dependencies
 
