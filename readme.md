@@ -6,7 +6,7 @@ An AI-powered real-time engagement tracker that analyzes video feeds, speech act
 ## 🚀 Features
 
 - 📹 Real-time video streaming using OpenCV and Flask. <br>
-- 🧠 Engagement tracking with EngageTrackVideoProcessor for face, gaze, and activity detection. <br>
+- 🧠 Engagement tracking with Media Pipe for face, gaze, and activity detection. <br>
 - 🎙️ Speech-to-text integration powered by the AssemblyAI API. <br>
 - 🔄 Live activity updates and event logs via Socket.IO. <br>
 - 📑 Session reports exported as downloadable PDFs. <br>
